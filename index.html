@@ -1,25 +1,252 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aquasync - Revolutionary UV Water Bottles</title>
-    <meta name="description" content="Aquasync creates premium water bottles with UV-C purification technology and advanced filtration systems. Pure water, anywhere." />
-    <meta name="author" content="Aquasync" />
+    <meta name="description" content="Aquasync creates premium water bottles with UV-C purification technology and advanced filtration systems. Pure water, anywhere.">
+    <meta name="author" content="Aquasync">
+    <meta property="og:title" content="Aquasync - Revolutionary UV Water Bottles">
+    <meta property="og:description" content="Premium water bottles with UV-C purification technology and advanced filtration systems. Pure water, anywhere.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@aquasync">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i data-lucide="droplets" class="icon"></i>
+                    <span class="logo-text">Aquasync</span>
+                </a>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link active">Home</a>
+                <a href="products.html" class="mobile-nav-link">Products</a>
+                <a href="features.html" class="mobile-nav-link">Features</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
 
-    <meta property="og:title" content="Aquasync - Revolutionary UV Water Bottles" />
-    <meta property="og:description" content="Premium water bottles with UV-C purification technology and advanced filtration systems. Pure water, anywhere." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Pure Water,
+                        <span class="text-blue">Anywhere</span>
+                    </h1>
+                    <p class="hero-description">
+                        Experience revolutionary hydration with Aquasync's UV-powered water bottles. 
+                        Advanced purification technology meets premium design for the ultimate drinking experience.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="products.html" class="btn btn-primary">
+                            Shop Now
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
+                        </a>
+                        <a href="features.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-circle">
+                        <i data-lucide="droplets" class="hero-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@aquasync" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Aquasync?</h2>
+                <p class="section-description">
+                    Our cutting-edge technology ensures every drop of water is pure, safe, and refreshing.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon yellow">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="feature-title">UV-C Purification</h3>
+                    <p class="feature-description">Advanced UV-C LED technology eliminates 99.9% of harmful bacteria and viruses instantly.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="feature-title">Multi-Stage Filtration</h3>
+                    <p class="feature-description">Premium carbon and ceramic filters remove chlorine, heavy metals, and impurities.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <i data-lucide="droplets"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Hydration</h3>
+                    <p class="feature-description">Intelligent sensors track your water intake and remind you to stay hydrated.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                    </div>
+                    <p class="testimonial-text">"The Aquasync Pro has completely changed my hydration game. The UV purification gives me peace of mind wherever I go!"</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Priya Sharma</p>
+                        <p class="author-role">Fitness Enthusiast</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                        <i data-lucide="star" class="star filled"></i>
+                    </div>
+                    <p class="testimonial-text">"Perfect for my frequent travels. I can drink safely from any water source with the amazing filtration system."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Rajesh Kumar</p>
+                        <p class="author-role">Business Traveler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Hydration?</h2>
+                <p class="cta-description">
+                    Join thousands of satisfied customers who've made the switch to pure, UV-purified water.
+                </p>
+                <a href="products.html" class="btn btn-white">
+                    Shop Aquasync Products
+                    <i data-lucide="arrow-right" class="btn-icon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i data-lucide="droplets" class="footer-icon"></i>
+                        <span class="footer-logo-text">Aquasync</span>
+                    </div>
+                    <p class="footer-description">
+                        Revolutionary water bottles with UV purification technology for pure, safe hydration anywhere.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="features.html" class="footer-link">Features</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-products">
+                    <h3 class="footer-title">Products</h3>
+                    <ul class="footer-list">
+                        <li>Aquasync Pro</li>
+                        <li>Aquasync Essential</li>
+                        <li>Aquasync Sport</li>
+                        <li>Aquasync Travel</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                            <span>info@aquasync.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="contact-icon"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Aquasync. All rights reserved. | Purifying water, enriching lives.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            const menuIcon = document.querySelector('.menu-icon');
+            const closeIcon = document.querySelector('.close-icon');
+            
+            mobileNav.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+    </script>
+</body>
 </html>
